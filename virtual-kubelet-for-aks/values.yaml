@@ -1,0 +1,35 @@
+image:
+  repository: microsoft/virtual-kubelet
+  tag: latest
+  pullPolicy: Always
+env:
+  azureClientId: f2edd7ec-8086-4bed-80a4-d26d0d6cbc73
+  azureClientKey: 
+  azureTenantId: 001ceeb6-e0d3-42e0-88fb-0e388f8c6675
+  azureSubscriptionId: 0c442b21-a8cf-4571-b835-b4d785d6628e
+  aciResourceGroup: AKSrg
+  aciRegion: japaneast
+  nodeName: virtual-kubelet-japaneast-linux
+  nodeTaint: 
+  nodeOsType: Linux
+  apiserverCert: 
+  apiserverKey: 
+  monitoredNamespace: 
+  aciVnetSubnetName: aks-virtualnode-subnet
+  aciVnetSubnetCidr: 10.241.0.0/16
+  masterUri: https://cse-5c99431e.hcp.japaneast.azmk8s.io:443
+  clusterCidr: 10.0.0.0/16
+  kubeDnsIp: 10.0.0.10
+  podIP: 10.241.0.4
+loganalytics:
+  enabled: true
+  workspaceID: cba2e902-dfaf-442b-bf10-8f98155b6c90
+  workspaceKey: 
+
+# Install Default RBAC roles and bindings
+rbac:
+  install: true
+  ## RBAC api version
+  apiVersion: v1beta1
+  # Cluster role reference
+  roleRef: cluster-admin
