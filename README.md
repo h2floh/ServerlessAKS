@@ -287,7 +287,7 @@ Also to recall the controlling pod for the virtual-node is using the unmodified 
 <br/>
 Ok, let's check what will go automatically if we untaint on of the virtual-nodes we have. So we remove the constraint of having a toleration at the deployment level of the pod.
 <br/>
-First have a look at the tain of one of our virtual-nodes:
+First have a look at the taint of one of our virtual-nodes:
 ```
 kubectl get nodes vk-vk-japaneast-linux -o yaml
 ```
@@ -340,7 +340,7 @@ The other reason I discontinued on it is I made a price comparison:
 
 ![Price comparison](images/2019-07-26_14-28-45.jpg)
 
-So Virtual-Node / Virtual-Kubelet is great to extend your AKS with Batch jobs or add one Windows Pod to a linux cluster. Or to extend it with a GPU! But a Serverless AKS based on Virtual-Kubelet is cumbersome and also not economically.<br/><br/>
+So Virtual-Node / Virtual-Kubelet is great to extend your AKS with Batch jobs or add one Windows Pod to a linux cluster. Or to extend it with a GPU! But a Serverless AKS based on Virtual-Kubelet is cumbersome and also not economical.<br/><br/>
 
 The best tip I got was just deallocate your node if you just use your AKS for dev/test/upskill! 
-<br/>**Thumps up for this Tip by Mani!**
+<br/>**Thumps up for this tip by Mani!**
